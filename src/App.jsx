@@ -240,10 +240,10 @@ export default function App() {
             <span className="text-sm text-gray-600">{form.fsrNo}</span>
           </div>
           <div className="flex flex-wrap items-center gap-2">
-            <label className="text-sm cursor-pointer px-3 py-2 rounded-lg border hover:bg-gray-100">
+            {/* <label className="text-sm cursor-pointer px-3 py-2 rounded-lg border hover:bg-gray-100">
               Import JSON
               <input type="file" accept="application/json" className="hidden" onChange={(e) => importJSON(e.target.files?.[0])} />
-            </label>
+            </label> */}
             <button onClick={exportJSON} className="px-3 py-2 rounded-lg border hover:bg-gray-100">Download JSON</button>
             <div className="flex items-center gap-2 px-3 py-2 rounded-lg border">
               <span className="text-sm">PDF quality</span>
