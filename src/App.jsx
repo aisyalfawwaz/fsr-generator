@@ -350,7 +350,7 @@ export default function App() {
             ))}
             <button onClick={addPart} className="px-3 py-2 border rounded-lg">+ Add part</button>
             <Row cols={3}>
-              <Input label="Job Status" value={form.jobStatus} onChange={(e) => set("jobStatus", e.target.value)} />
+              <Input label="Job Status (Complete/Incomplete)" value={form.jobStatus} onChange={(e) => set("jobStatus", e.target.value)} />
               <Input label="Status (Chargeable/FOC/Borrow)" value={form.statusChargeable} onChange={(e) => set("statusChargeable", e.target.value)} />
               <Input label="Condition When Leave" value={form.conditionWhenLeave} onChange={(e) => set("conditionWhenLeave", e.target.value)} />
             </Row>
